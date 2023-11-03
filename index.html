@@ -1,0 +1,111 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Neville Ettlin - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_responsive.css">
+  <script src="js/main.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=PT+Serif:ital@1&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="name">
+      <a href="/index.html">
+        <span style="color: black;">Neville Ettlin</span>
+        <span style="color: #E79794;;">.</span>
+    </div></a>
+    <ul>
+      <li><a href="/sites/dokumente.html">Dokumente</a></li>
+      <li><a href="/sites/blog.html">Blog</a></li>
+      <li><a href="/sites/kontakt.html">Kontakt</a></li>
+
+
+    </ul>
+  </nav>
+  <!--
+  <div id="slider_welcome_align">
+<div id="welcome_align">
+  <div class="animation_up" style="font-size: 220px; ">
+    Hallo
+  </div>
+  <div id="animation_down" style="font-size: 110px; ">
+    ich heisse Neville <br> und bin ein:
+  </div>
+</div>
+-->
+
+
+  <div id="welcome_align">
+    <div id="welcome_items_hallo">
+      <div class="animation_up">
+        Hallo
+      </div>
+    </div>
+    <div id="welcome_items_name">
+      <div id="animation_down">
+        ich heisse Neville <br> und bin ein:
+      </div>
+
+      <!--Delays for welcome animation in js-->
+      <script>
+        //hides: welcome_items_name till animation
+        setTimeout(() => {
+          const one = document.getElementById('animation_down');
+          //hides welcome_items_welcome in 0ms
+          one.style.visibility = 'hidden';
+        }, 0);
+
+        //Makes welcome_items_name appear again 
+        setTimeout(() => {
+          const two = document.getElementById('animation_down');
+          //shows welcome_items_welcome after 1000ms
+          two.style.visibility = 'visible';
+        }, 1000); 
+      </script>
+
+
+
+
+    </div>
+  </div>
+  </div>
+
+  <!--Arow-->
+  <div id="arrow_align">
+    <a href="#1st_slide">
+      <img src="media/icons/arrow.svg" width="15">
+    </a>
+  </div>
+
+  <!--Slider-->
+  <div class="image-wrapper">
+    <div class="image-container">
+      <a id="1st_slide"></a>
+      <img src="/media/images/dev.png" alt="Image 1">
+    </div>
+    <div class="image-container">
+      <img src="/media/images/it.png" alt="Image 2">
+    </div>
+    <div class="image-container">
+      <img src="/media/images/create.png" alt="Image 3">
+    </div>
+    <div class="image-container">
+      <img src="/media/images/school.png" alt="Image 3">
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
