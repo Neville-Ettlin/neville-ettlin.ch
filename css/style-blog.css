@@ -1,0 +1,53 @@
+
+
+  a:hover {
+    color: black;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none; 
+    padding-right: 2.5%;
+  }
+  
+  nav li {
+    padding-left: 1rem; 
+    font-family: 'DM Sans', sans-serif; 
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #808080
+  }
+
+  .name {
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    padding-left: 2.5%;
+    color: black    ;
+  }
+    .name_point {
+      color: #E79794;
+    }
+
+
+    @font-face {
+      font-family: tex;
+      src: url("tex.otf") format("opentype");
+    }
+
+#cooming_soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: tex;
+  font-size: 100px;
+}
